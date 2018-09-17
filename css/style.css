@@ -44,53 +44,45 @@ a:hover{
 .nav a{
   transition: all .5s;
 }
-.card{
-  margin: 30px;
-  padding: 20px 40px 40px;
-  max-width: 500px;
-  text-align: center;
-  transition: all .5s;
-}
 .footer{
   width: 100%;
   min-height: 30px;
   padding: 20px 0 40px 20px;
 }
-.clearfix{
-  clear: both;
-}
-}
+
 /* Media Queries*/
 @media (min-width: 769px){
+  .clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
   .container{
     width: 90%;
-    max-width: 1000;
-    margin: 0 auto;
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-  .flex{
-    display: flex;
-    max-width: 1200px;
-    justify-content: space-around;
     margin: 0 auto;
   }
-  header{
-    min-height: 470;
+  .name,
+  .col{
+    float: left;
   }
-  .nav{
-    max-width: 1200px;
-    padding:0 30px;
+  .primary,
+  .secondary{
+    width: 50%;
   }
-  main{
-    padding-top: 20px;
+  .main-nav{
+  float:right;
   }
-  main p{
-    line-height: 1.6em;
+}
+@media (min-width:1025px){
+  .container{
+    width: 80%;
+    max-width: 1150px;
   }
-  footer{
-    font-size: 1.3em;
-    max-width: 1200px;
-    margin: 40px auto;
+  .primary{
+    width: 40%;
+  }
+  .secondary,
+  .tertiary{
+    width: 30%;
   }
 }
