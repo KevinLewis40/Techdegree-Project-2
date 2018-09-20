@@ -3,81 +3,88 @@
   <head>
     <meta charset="utf-8">
     <title>Student Portfolio</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900"
     rel="stylesheet">
   </head>
   <body>
-    <header id="home">
-    <div class="topnav">
-      <ul class="nav">
-        <li class="name">Student Name</li>
-        <li><a href="#home">Home</a></li>
+    <header>
+     <div class="container clearfix">
+     <div>
+      <h1 class="name">Student Name</h1>
+      <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-     </div>
-     <div>
-      <img src="images/responsive-layout-profile.png" height="300"
+     </nav>
+    </div>
+     <div class="profile clearfix">
+      <img class="profile-pic" src="images/responsive-layout-profile.png" height="300"
            alt="Profile Image">
-      <p>Hi! I'm a front-end developer who loves responsive design and css.
+      <p class="intro">Hi! I'm a front-end developer who loves responsive design and css.
          I recently finished learning front-end web development at Treehouse and
          am excited to put all my skills to use!</p>
+      </div>
      </div>
     </header>
-    <main class="flex">
-      <h2 id="portfolio">Portfolio</h2>
-       <div>
-        <img src="images/portfolio-1.png" height="500" alt="Marketing Image">
+    <main>
+      <div id="portfolio" class="container clearfix">
+      <h2>Portfolio</h2>
+      <div class="media">
+        <img src="images/portfolio-1.png" alt="Marketing Image">
         <h3>Marketing Page</h3>
         <p>This project shows the front page of a marketing website meant for a
            specific business i'm interested in.</p>
-       </div>
-       <div>
-        <img src="images/portfolio-2.png" height="500" alt="Search Image">
+      </div>
+       <div class="media">
+        <img src="images/portfolio-2.png" alt="Search Image">
         <h3>Search Page</h3>
         <p>This project searches through a specific database to find information
            that the user is trying to look up.</p>
        </div>
-       <div>
-        <img src="images/portfolio-3.png" height="500" alt="Travel Image">
+       <div class="media">
+        <img src="images/portfolio-3.png" alt="Travel Image">
         <h3>Travel App</h3>
         <p>This project compares travel times based on different transportation
            methods and tells you the best one.</p>
        </div>
-       <div>
-        <img src="images/portfolio-4.png" height="500" alt="Map Image">
+       <div class="media">
+        <img src="images/portfolio-4.png" alt="Map Image">
         <h3>Map of Favorite Spots</h3>
         <p>This project uses mapping apis to plot points for my favorite spots
            in the city for a do-it-yourself walking tour.</p>
        </div>
-       <div>
-        <img src="images/portfolio-5.png" height="500" alt="Photo Gallery Image">
+       <div class="media">
+        <img src="images/portfolio-5.png" alt="Photo Gallery Image">
         <h3>Photo Gallery</h3>
         <p>This project shows pictures from a recent trip to the viewer and
            allows them to easily navigate through photo.</p>
        </div>
-       <div>
-        <img src="images/portfolio-6.png" height="500" alt="Calculator Image">
+       <div class="media">
+        <img src="images/portfolio-6.png" alt="Calculator Image">
         <h3>Calculator</h3>
         <p>Someone can enter in the numbers they want, and press the big blue
            button and get the results.</p>
        </div>
-       <div>
-      <h2 id="contact">Contact</h2>
+     </div>
+     <div id="contact" class="container">
+        <h2>Contact</h2>
         <p>If you're interested in chatting or want more information about what
            i've been working on, i'd love to hear from you!</p>
-       </div>
-       <div>
-        <p>Phone +1(111)555-1234</p>
-        <p>Email email@yoursite.com</p>
-       </div>
+       <address>
+        <p>Phone <span>+1(111)555-1234</span></p>
+        <p>Email <span><a href="mailto:email@yoursite.com">email@yoursite.com</a><span></p>
+       </adress>
+     </div>
     </main>
-    <footer class="topnav">
-      <ul class="nav">
-        <li class="name">Student Name</li>
-        <li><a href="#top">Back To Top</a></li>
-      </ul>
+    <footer>
+     <div class="bottom-nav clearfix">
+      <h3 class="nav-name">Student Name</h3>
+      <h3 class="to-top"><a href="#top">Back To Top</a></h3>
+    </div>
     </footer>
   </body>
 </html>
