@@ -98,9 +98,6 @@ span{
   .nav-name{
     font-size: 1.25em;
   }
-  .to-top{
-    display: none;
-  }
   .nav-list{
     display: inline-block;
     float: right;
@@ -131,7 +128,7 @@ span{
       float: right;
     }
     .media{
-      width: 33%
+      width: 33%;
     }
   }
 }
